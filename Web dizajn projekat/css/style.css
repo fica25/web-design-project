@@ -1,0 +1,692 @@
+:root {
+    --primary-color: #E57B45;
+    --secondary-color: #3975A7;
+}
+
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+/*-------------------------------*/
+
+/* Base styles */
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+/*----- Mobile styles----*/
+
+/* --- HEADER ---- */
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    padding-top: 25px;
+
+}
+
+.booking-form {
+    display: none;
+}
+
+.logo-wrapper {
+    display:none;
+}
+
+.logo-wrapper img {
+    max-width: 250px;
+}
+
+/*HAMBUER MENU */
+.hamburger-menu {
+    position: absolute;
+    right: .75rem;
+    top: .75rem;
+}
+.hamburger-menu:hover{
+    cursor:pointer;
+}
+
+header nav {
+    display: none;
+}
+
+/*--- HAMBURGER ANIMATION ---*/
+.header-nav{
+    /*
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+    */
+    
+}
+.header-nav ul{
+    width:100%;
+}
+.header-nav ul li{
+    background-color:#8CBAE6;
+    padding:10px;
+    text-align:center;
+    
+}
+.header-nav ul li a{
+    color:#ffffff;
+}
+.header-nav ul li a:hover{
+    color:#E57B45;
+}
+.header-nav ul li:hover{
+    background-color:#3975A7;
+    cursor:pointer;   
+}
+.logo-wrapper{
+    position:fixed;
+    top:3%;
+    left:27%;
+}
+.header-nav.active{
+    display:flex;
+    margin-top:50px;
+}
+
+
+/*------------------------------------*/
+
+.overlay {
+    background-color: var(--secondary-color);
+    opacity: 75%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* --- HERO SECTION ---- */
+#hero-section {
+    background: url('/images/belgrade-tournimage-2021.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: green;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    font-size: 1, 2em;
+    color: var(--primary-color);
+    font-weight: normal;
+
+}
+
+.stars-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- HERO SECTION FINISHED HERE ---- */
+
+/* --- OFFERS SECTION */
+#offers-section {
+    background-color: #F5E1D0;
+    padding: 50px 0;
+
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.offers-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+    padding: 0 50px;
+
+}
+
+.offer-h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    max-width: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* --- OFFERS SECTION ENDS HERE --- 8/
+/*--- PONUDA --- */
+.hotel-c-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.img-wrapper {
+    grid-column: 1/9;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-height:872px;
+}
+
+.text-wrapper {
+    padding: 0 20px;
+    grid-column: 1/9;
+    grid-row: 2;
+    text-align: center;
+    background-color: #8CBAE6;
+    max-height:872px;
+    height:100%;
+}
+
+.text-wrapper h3 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: normal;
+
+}
+
+.text-wrapper p {
+    text-align: center;
+    color: #3975A7;
+}
+
+.text-wrapper button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #E57B45;
+    background-color: #ffffff;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+.text-wrapper button:hover{
+    background-color:#3975A7;
+    cursor:pointer;
+    color:#ffffff;
+}
+.text-wrapper-r button:hover{
+    background-color:#3975A7;
+    cursor:pointer;
+    color:#ffffff;
+}
+
+
+/*---- PONUDA ENDS HERE ---- */
+
+
+/*--- VISE OD OCEKIVANOG ----*/
+#more-than-expected-section{
+    padding:100px 0px;
+}
+#more-than-expected-section h3 {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #E57B45;
+}
+
+.videos-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.s-video-wrapper {
+    grid-column: 1/9;
+}
+
+/* --- VISE OD OCEKIVANOG ENDS HERE ---*/
+
+/*--- FOOTER ---*/
+footer {
+    padding: 50px 50px;
+    background-color: #F5E6DA;
+}
+
+.f-logo-wrapper {
+    grid-column: 1/3;
+    margin-right: 50px;
+}
+
+.f-logo-wrapper img {
+    max-width: 120px;
+}
+
+.links-wrapper {
+    grid-column: 4/6;
+    grid-row: 1;
+
+}
+
+.links-wrapper a {
+    color: #3975A7;
+}
+
+.sm-icons-wrapper {
+    display: flex;
+    gap: 10px;
+    grid-column: 7/9;
+}
+
+/*--- larg tablets and laptops styles ---- */
+@media screen and (min-width:960px) {
+    body {
+        font-size: 18px;
+    }
+
+  
+    header nav {
+        display: flex;
+        justify-content:space-between;
+    }
+    .header-nav ul li{
+        background-color:transparent;
+    }
+    .header-nav ul li:hover{
+        background-color:transparent;
+    }
+    .logo-wrapper{
+       max-width:250px;
+       position:static;
+       margin-left:0;
+       display:block;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        color: #ffffff;
+    }
+
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    #hero-section {
+        padding: 150px 0;
+    }
+
+    .booking-form{
+        display:block;
+    }
+    .booking-form{
+        position:relative;
+        z-index:3;
+        display:flex;
+        background-color:#ffffff;
+        padding:40px 40px;
+        max-width:800px;
+        margin:0 auto;
+        border-radius:10px;
+        justify-content:center;
+        gap:100px;
+        align-items:center;
+        margin-top:50px;
+    }
+    .booking-form label{
+        font-size:1.2em;
+        color:#3975A7;
+        font-weight:bold;
+    }
+    .arrival-date-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .arrival-date-content input{
+        padding:10px;
+        border:1px solid #E57B45;
+        border-radius:5px;
+        color:#E57B45;
+       
+    }
+    .departure-date-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .departure-date-content input{
+        margin-top:20px;
+        padding:10px;
+        border:1px solid #E57B45;
+        border-radius:5px;
+        color:#E57B45;
+    }
+    .button-wrapper input{
+        padding:10px;
+        color:#ffffff;
+        font-size:1.2em;
+        border-radius:10px;
+        text-transform:uppercase;
+        border:none;
+        background-color:#E57B45;
+    }
+    .button-wrapper input:hover{
+        background-color:#a55228;
+        cursor:pointer;
+    }
+
+
+   
+
+  
+
+    .offers-content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .offer-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 50px;
+        width: auto;
+    }
+
+    .offer-h3 {
+        font-size: 1em;
+        max-width: 64px;
+    }
+
+    .img-wrapper {
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+
+    .text-wrapper {
+        grid-column: 5/9;
+        grid-row: 1;
+    }
+
+    .img-wrapper-r {
+        grid-column: 5/9;
+    }
+
+    .text-wrapper-r {
+        grid-column: 1/5;
+        background-color: #8CBAE6;
+        grid-row: 1;
+        text-align:center;
+    }
+
+    .text-wrapper-r h3 {
+        color: #E57B45;
+        font-size: 1.6em;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .text-wrapper-r p {
+        text-align: center;
+        color: #3975A7;
+        font-size:1.6em;
+    }
+    .text-wrapper p{
+        font-size:1.6em;
+    }
+    .text-wrapper button{
+        margin-top:50px;
+    }
+
+    .text-wrapper-r button {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #E57B45;
+        background-color: #ffffff;
+        font-size: 1.2em;
+        color: var(--primary-color);
+        margin-top:50px;
+        text-transform: uppercase;
+        text-align:center;
+    }
+   .s-video-wrapper{
+    grid-column:3/6;
+   }
+   .s-video-wrapper h3{
+    margin-left:170px;
+   }
+   .f-logo-wrapper img{
+    max-width:250px;
+   }
+   .links-wrapper{
+    grid-column:3/7;
+   }
+   .links-wrapper ul{
+    display:flex;
+    gap:20px
+   }
+   .sm-icons-wrapper{
+    grid-column:7/9;
+   }
+
+
+
+}
+
+/*--- Desktop styles ---*/
+@media screen and (min-width:1200px){
+    body{
+        font-size:20px;
+    }
+    header{
+        padding:50px 50px;
+    }
+    header nav ul li:hover{
+        color:#E57B45;
+        cursor:pointer;
+    }
+    .flex-wrapper{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        gap:180px;
+    }
+   
+    #hero-section{
+       padding:300px 0px;
+    }
+    .booking-menu{
+        display:flex;
+        gap:100px;
+        max-width:1100px;
+    }
+    .book-menu-h3{
+        font-size:1.2em;
+    }
+    .booking-btn{
+        font-size:1.2em;
+        padding:25px;
+    }
+    .booking-form{
+        position:relative;
+        z-index:3;
+        display:flex;
+        background-color:#ffffff;
+        padding:40px 40px;
+        max-width:800px;
+        margin:0 auto;
+        border-radius:10px;
+        justify-content:center;
+        gap:100px;
+        align-items:center;
+        margin-top:50px;
+    }
+    .booking-form label{
+        font-size:1.2em;
+        color:#3975A7;
+        font-weight:bold;
+    }
+    .arrival-date-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .arrival-date-content input{
+        padding:10px;
+        border:1px solid #E57B45;
+        border-radius:5px;
+        color:#E57B45;
+        margin-top:20px;
+    }
+    .departure-date-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .departure-date-content input{
+    padding:10px;
+        border:1px solid #E57B45;
+        border-radius:5px;
+        color:#E57B45;
+    }
+    .button-wrapper input{
+        padding:10px;
+        color:#ffffff;
+        font-size:1.2em;
+        border-radius:10px;
+        text-transform:uppercase;
+        border:none;
+        background-color:#E57B45;
+    }
+    .button-wrapper input:hover{
+        background-color:#a55228;
+        cursor:pointer;
+    }
+    
+    }
+   
+    #offers-section{
+        padding:100px 0px;
+    }
+    .grid-wrapper{
+        max-width:1200px;
+        margin:0 auto;
+    }
+    #offers-section h2{
+        margin-bottom:80px;
+    }
+   
+    .offers-content-wrapper{
+        display:flex;
+        justify-content:center;
+        max-width:1200px;
+
+    }
+    .text-wrapper{
+        padding:25px 30px;
+        max-height:820px;
+        height:100%;
+    }
+    .text-wrapper-r{
+        padding:25px 30px;
+    }
+    .text-wrapper p{
+        line-height:1.8em;
+        font-size:1.6em;
+        margin-top:50px;
+    }
+    #more-than-expected-section h2{
+        margin-left:100px;
+    }
+    .s-video-wrapper{
+        grid-column:5/6;
+    }
+    .s-video-wrapper h3{
+        margin-left:0;
+        
+    }
+    .links-wrapper{
+        grid-column:4/7;
+    }
+
+   .sm-icons-wrapper{
+    grid-column:8/9;
+   }
+
+
+/*--- More than expected section  glitch at 959px fix ---*/
+@media screen and (min-width:959px){
+    .s-video-wrapper{
+        grid-column:5/6;
+    }
+}
+@media screen and (min-width:559px){
+    .s-video-wrapper{
+        grid-column:5/6;
+    }
+}
+/*-- offers section fix ---*/
+@media screen and (max-width:960px){
+    .offers-content-wrapper{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    
+    
+}
+
+@media screen and (min-width:974px){
+    .text-wrapper{
+        max-height:770px;
+        height:100%;
+    }
+    .img-wrapper{
+        max-height:820px;
+        height:100%;
+    }
+    
+    
+}
